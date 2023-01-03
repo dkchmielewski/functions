@@ -33,7 +33,7 @@ const getComputerChoice = () => {
   }
 };
 
-const getWinner = (cChoice, pChoice = cChoice === ROCK ? PAPER : DEFAULT_USER_CHOICE) => 
+const getWinner = (cChoice, pChoice = DEFAULT_USER_CHOICE) => 
   cChoice === pChoice
     ? RESULT_DRAW
     : (cChoice === ROCK && pChoice === PAPER) ||
